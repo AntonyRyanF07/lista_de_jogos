@@ -1,0 +1,122 @@
+/*
+  Esse arquivo só cuida da aparência do app. O React não depende
+  dele: se você apagar tudo o que está aqui dentro, o formulário
+  funciona do mesmo jeito, só fica sem cor.
+
+  Pode mexer à vontade. Troque um valor, salve e veja o que muda
+  no app. Se quebrar alguma coisa, cole de novo o arquivo do
+  Classroom.
+
+  As cores estão no formato #rrggbb. Para achar o código de uma
+  cor, pesquise "color picker" no Google.
+*/
+
+/* o * pega todos os elementos da página */
+* {
+  /* a largura de cada caixa passa a contar o padding e a
+     borda. quase todo site tem essa linha, pode deixar */
+  box-sizing: border-box;
+}
+
+/* a página inteira */
+body {
+  margin: 0; /* tira a margem que o navegador põe em volta */
+  /* se o computador não tiver Arial, tenta a Helvetica. se não
+     tiver nenhuma das duas, usa qualquer fonte sem serifa */
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f5f3; /* fundo cinza bem clarinho */
+  color: #1f2937; /* cor do texto, quase preto */
+}
+
+/* o #root é a div do index.html onde o React coloca o app
+   (o # quer dizer id). é o margin auto que deixa o app no
+   meio da tela */
+#root {
+  max-width: 640px; /* o app nunca fica mais largo que isso */
+  margin: 32px auto; /* 32px em cima e embaixo, auto nos lados */
+  padding: 0 16px; /* 16px dos lados, pra não colar na borda */
+}
+
+/* o título "Minha Lista". se trocar a cor dele, troque a do
+   botão também, que é o mesmo verde */
+h1 {
+  color: #2e7d32;
+}
+
+/* o quadro branco do formulário */
+form {
+  display: grid; /* um campo embaixo do outro, mesma largura */
+  gap: 10px; /* espaço entre um campo e outro */
+  padding: 16px; /* espaço entre a borda do quadro e os campos */
+  background: #fff; /* branco (#fff é o mesmo que #ffffff) */
+  border-radius: 10px; /* cantos redondos (0 = quadrado) */
+  /* sombra fraquinha: 0 pro lado, 1px pra baixo e 4px de
+     desfoque. a cor é preto com 12% de opacidade (o 0.12) */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* os campos de texto e a lista de opções (select). a vírgula faz
+   a regra valer para os dois. a caixa de marcar também é input,
+   mas nela essas linhas quase não fazem diferença */
+input,
+select {
+  font-size: 16px; /* tamanho da letra dentro do campo */
+  padding: 8px 10px; /* 8px em cima e embaixo, 10px dos lados */
+  /* borda de 1px, linha contínua (solid), cinza claro */
+  border: 1px solid #c7d0c9;
+  border-radius: 6px; /* menos arredondado que o form */
+}
+
+/* o label junta a caixa de marcar com o texto "Já assisti" */
+label {
+  display: flex; /* põe os dois na mesma linha */
+  align-items: center; /* caixa alinhada com o meio do texto */
+  gap: 8px; /* espaço entre a caixa e o texto */
+}
+
+/* o botão Adicionar. ele ocupa a largura toda porque está dentro
+   do form, que é grid */
+button {
+  font-size: 16px; /* tamanho da letra */
+  padding: 8px 14px; /* deixa o botão mais alto */
+  border: 0; /* tira a borda que o navegador coloca */
+  border-radius: 6px; /* igual aos campos */
+  background: #2e7d32; /* verde (o mesmo do h1) */
+  color: #fff; /* letra branca */
+  cursor: pointer; /* a mãozinha quando o mouse passa em cima */
+}
+
+/* a mensagem de erro. o ponto quer dizer classe, é o
+   <p className="erro"> do App.jsx */
+.erro {
+  padding: 8px 12px; /* 8px em cima e embaixo, 12px dos lados */
+  border-radius: 6px; /* cantos redondos */
+  background: #ffedd5; /* fundo laranja clarinho */
+  color: #9a3412; /* texto laranja escuro */
+  /* prefere vermelho? tente #fee2e2 no fundo e
+     #991b1b no texto */
+}
+
+/* a lista de filmes */
+ul {
+  list-style: none; /* tira as bolinhas */
+  padding: 0; /* tira o recuo que a lista tem na esquerda */
+}
+
+/* cada filme vira um quadrinho branco, parecido com o do form */
+li {
+  margin-top: 8px; /* espaço entre um filme e outro */
+  padding: 10px 14px; /* espaço de dentro do quadrinho */
+  background: #fff; /* branco */
+  border-radius: 8px; /* cantos redondos */
+  /* sombra ainda mais fraca que a do formulário (0.08) */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* quer que o botão mude de cor quando o mouse passa em cima?
+   apague a primeira e a última linha do bloco abaixo */
+/*
+button:hover {
+  background: #1b5e20;
+}
+*/

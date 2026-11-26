@@ -1,0 +1,81 @@
+{
+  "jogos": [
+    {
+      "id": "1",
+      "nome": "The Legend of Zelda: Breath of the Wild",
+      "genero": "Aventura",
+      "horas": 65,
+      "zerado": true
+    },
+    {
+      "id": "2",
+      "nome": "God of War Ragnarök",
+      "genero": "Ação",
+      "horas": 42,
+      "zerado": true
+    },
+    {
+      "id": "3",
+      "nome": "Minecraft",
+      "genero": "Aventura",
+      "horas": 120,
+      "zerado": false
+    },
+    {
+      "id": "4",
+      "nome": "Stardew Valley",
+      "genero": "Estratégia",
+      "horas": 38,
+      "zerado": false
+    },
+    {
+      "id": "5",
+      "nome": "Elden Ring",
+      "genero": "RPG",
+      "horas": 87,
+      "zerado": true
+    },
+    {
+      "id": "6",
+      "nome": "EA Sports FC 25",
+      "genero": "Esporte",
+      "horas": 24,
+      "zerado": false
+    },
+    {
+      "id": "7",
+      "nome": "Hollow Knight",
+      "genero": "Aventura",
+      "horas": 31,
+      "zerado": true
+    },
+    {
+      "id": "8",
+      "nome": "Forza Horizon 5",
+      "genero": "Corrida",
+      "horas": 19,
+      "zerado": false
+    },
+    {
+      "id": "9",
+      "nome": "Civilization VI",
+      "genero": "Estratégia",
+      "horas": 53,
+      "zerado": false
+    },
+    {
+      "id": "10",
+      "nome": "Final Fantasy VII Remake",
+      "genero": "RPG",
+      "horas": 46,
+      "zerado": true
+    },
+    {
+      "nome": "CS GO",
+      "genero": "Ação",
+      "horas": 10,
+      "zerado": false,
+      "id": "Z5yybjA"
+    }
+  ]
+}
